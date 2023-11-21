@@ -18,8 +18,8 @@ files:
   - name: test/CarSellerTest.java
     visible: true
     placeholders:
-      - offset: 192
-        length: 10
+      - offset: 188
+        length: 0
         placeholder_text: /* TODO */
         initial_state:
           length: 10
