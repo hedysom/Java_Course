@@ -3,7 +3,7 @@ package it.unisa.student;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Student /* TODO */{
+public class Student implements  Comparable<Student>{
     private final String firstName;
     private final String lastName;
     List<Exam> exams;
@@ -39,5 +39,8 @@ public class Student /* TODO */{
         return averageGrade;
     }
 
-    /* TODO */
+    @Override
+    public int compareTo(Student student){
+        return (this.lastName.compareTo(student.lastName));
+    }
 }

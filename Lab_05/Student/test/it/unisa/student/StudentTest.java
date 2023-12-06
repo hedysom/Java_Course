@@ -41,6 +41,19 @@ public class StudentTest {
 
     @Test
     public void studentsOrderTest() {
-    /* TODO */
+        Student student1 = new Student("Alessandro", "De Maio");
+        Student student = new Student("Antonio", "D'Urso");
+        Student student2 = new Student("Dario", "Di Nucci");
+        Student student3 = new Student("Eugenio", "Greco");
+        Student student4 = new Student("Ivan", "Chiello");
+        List<Student> lista = new ArrayList<Student>();
+        lista.add(student);
+        lista.add(student1);
+        lista.add(student2);
+        lista.add(student3);
+        lista.add(student4);
+        Collections.sort(lista);
+        Assert.assertEquals("Chiello", lista.get(0).getLastName());
+        Assert.assertEquals("Greco", lista.get(4).getLastName());
     }
 }

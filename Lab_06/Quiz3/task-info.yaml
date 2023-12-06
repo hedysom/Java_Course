@@ -4,13 +4,13 @@ files:
     visible: true
     placeholders:
       - offset: 52
-        length: 10
+        length: 30
         placeholder_text: /* TODO */
         initial_state:
           length: 10
           offset: 52
         initialized_from_dependency: false
-        selected: false
+        selected: true
         status: Unchecked
         encrypted_possible_answer: 2cQygpHHVu0cuoXfSaMSZwAiRCrCBnYWBlZjERdR2mI=
     encrypted_text: YsPfolFLo/rZ2mVBdVwjqJF6hmdl291jmy0yWGixb8XAivQuOAzTAnSR4MRB0+Dchctfc+n1kOvThe5DJ3zcjxDtYD/RgP6vAj4A96l+opNZBAhZpAF2Gohh1Bl4q5AA
@@ -19,16 +19,16 @@ files:
     visible: true
     placeholders:
       - offset: 171
-        length: 10
+        length: 53
         placeholder_text: /* TODO */
         initial_state:
           length: 10
           offset: 171
         initialized_from_dependency: false
-        selected: false
+        selected: true
         status: Unchecked
         encrypted_possible_answer: rydaPfk0X4RmkWkdkoZFEO2oZc1fEG2vzQfOItOIJnDZnaUjpA449ZjOPKLSVIIEQEZvGDsDWQhA5AkyHrFKiqpgp5oxHwgWgAM+vLKNb2GCvlZN7xUxZB2T5sIrBNWWqjkaNebaAbLpKU7so2EOLzyrjbomcXr8H8H8GIKguXMn/YZraXVIwAZHELsOfMsB
-      - offset: 187
+      - offset: 230
         length: 10
         placeholder_text: /* TODO */
         initial_state:

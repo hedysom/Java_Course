@@ -8,7 +8,9 @@ public class Quiz implements Measurable {
         this.score = score;
     }
 
-    /* TODO */
+    public double getMeasure{
+        return score;
+    }
 
     /* TODO */
 }

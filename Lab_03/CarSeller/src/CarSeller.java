@@ -25,7 +25,7 @@ public class CarSeller {
     }
 
     public ArrayList<Car> ModelSearch(String manufacturer, String model){
-    ArrayList<Car> suitable = new ArrayList<>();
+    ArrayList<Car> suitable = new ArrayList<Car>();
         for(Car car: cars) {
             if (car.getModel().equalsIgnoreCase(model) && car.getBrand().equalsIgnoreCase(manufacturer))
                 suitable.add(car);
@@ -33,23 +33,23 @@ public class CarSeller {
         return suitable;
     }
     public ArrayList<Car> ModelSearchByYear(String manufacturer, String model, int year){
-        ArrayList<Car> suitable = new ArrayList<>();
+        ArrayList<Car> suitable = new ArrayList<Car>();
         for(Car car: cars){
             if(car.getModel().equalsIgnoreCase(model) &&
                     car.getBrand().equalsIgnoreCase(manufacturer) &&
-                    (car.getManufacturingYear() == year))
+                    (car.getManufacturingYear() >= year))
                         suitable.add(car);
 
         }
         return suitable;
     }
 
-    public ArrayList<Car> ModelSearchByYear(String manufacturer, String model, int year, double highPrice, double lowPrice){
-        ArrayList<Car> suitable = new ArrayList<>();
+    public ArrayList<Car> ModelSearchByYearPrice(String manufacturer, String model, int year, double highPrice, double lowPrice){
+        ArrayList<Car> suitable = new ArrayList<Car>();
         for(Car car: cars){
             if(car.getModel().equalsIgnoreCase(model) &&
                     car.getBrand().equalsIgnoreCase(manufacturer) &&
-                    (car.getManufacturingYear() == year) &&
+                    (car.getManufacturingYear() >= year) &&
                     car.getPrice() >= lowPrice &&
                     car.getPrice() <= highPrice)
                         suitable.add(car);

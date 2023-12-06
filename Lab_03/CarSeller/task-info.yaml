@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 732
-        length: 1347
+        length: 1361
         placeholder_text: /* TODO */
         initial_state:
           length: 10
@@ -18,7 +18,7 @@ files:
   - name: test/CarSellerTest.java
     visible: true
     placeholders:
-      - offset: 188
+      - offset: 1360
         length: 0
         placeholder_text: /* TODO */
         initial_state:
@@ -41,5 +41,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Mon, 20 Nov 2023 08:00:36 UTC"
+  time: "Tue, 21 Nov 2023 15:51:13 UTC"
 record: -1
