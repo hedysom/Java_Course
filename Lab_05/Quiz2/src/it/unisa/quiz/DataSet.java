@@ -3,8 +3,8 @@ package it.unisa.quiz;
 public class DataSet {
 
     private double sum;
-    private /* TODO */ minimum;
-    private /* TODO */ maximum;
+    private Quiz minimum;
+    private Quiz maximum;
     private int count;
 
     public DataSet() {
@@ -19,15 +19,22 @@ public class DataSet {
         else return sum / count;
     }
 
-    public /* TODO */ getMaximum() {
+    public Quiz getMaximum() {
         return maximum;
     }
 
-    public /* TODO */ getMinimum() {
+    public Quiz getMinimum() {
         return minimum;
     }
 
-    public void add(/* TODO */ x) {
-        /* TODO */
+    public void add(Quiz quiz) {
+       sum += quiz.getMeasure();
+       if ( (count == 0) || (minimum.compareTo(quiz)) > 0)
+           minimum = quiz;
+
+       if ( (count == 0) || (maximum.compareTo(quiz)) < 0)
+           maximum = quiz;
+
+       count++;
     }
 }

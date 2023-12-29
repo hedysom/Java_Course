@@ -5,7 +5,10 @@ public class Manager extends Employee {
     private String expertiseArea;
     private int workedHours;
 
-    /* TODO */
+    public Manager(String name, String lastName, String jobTitle, float hourlyWage, String expertiseArea){
+        super(name, lastName, jobTitle, hourlyWage);
+        this.setExpertiseArea(expertiseArea);
+    }
 
     public String getExpertiseArea() {
         return expertiseArea;
@@ -19,15 +22,14 @@ public class Manager extends Employee {
         return workedHours;
     }
 
-    /* TODO */
-
-    /* TODO */
-
-    /* TODO */
+    public void setWorkedHours(int workedHours){
+        this.workedHours = workedHours;
+        super.setWage(workedHours*this.getHourlyWage());
+    }
 
     @Override
     public String toString() {
         return super.toString() +
-                ", Area di competenza='" + expertiseArea + '\'';
+                ", Area di competenza='s" + expertiseArea + '\'';
     }
 }

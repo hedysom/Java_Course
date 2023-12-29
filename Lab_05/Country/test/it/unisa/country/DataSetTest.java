@@ -6,11 +6,21 @@ import org.junit.Test;
 public class DataSetTest {
     @Test
     public void testMinimum() {
-        /* TODO */
+        Country italia = new Country("Italia", 2004);
+        Country ucraina = new Country("Ucraina", 6000);
+        DataSet dataSet = new DataSet();
+        dataSet.add(italia);
+        dataSet.add(ucraina);
+        Assert.assertEquals(2004, dataSet.getMinimum().getSurfaceArea(), 0);
     }
 
     @Test
     public void testMaximum() {
-        /* TODO */
+        Country italia = new Country("Italia", 2004);
+        Country ucraina = new Country("Ucraina", 6000);
+        DataSet dataSet = new DataSet();
+        dataSet.add(italia);
+        dataSet.add(ucraina);
+        Assert.assertEquals(6000, dataSet.getMaximum().getSurfaceArea(), 0);
     }
 }
